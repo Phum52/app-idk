@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#e4f1ff">
+<title>ตรวจเขต</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="bg" aria-hidden="true"></div>
+
+<main id="app"></main>
+
+<nav id="dock" data-tab="today" aria-label="เมนูหลัก">
+  <div class="tabs glass" role="tablist">
+    <i class="tab-ind"></i>
+    <button class="tab on" data-action="tab" data-tab="today" role="tab" aria-selected="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8 12.5l3 3 5-6"/></svg>
+      <span>วันนี้</span>
+    </button>
+    <button class="tab" data-action="tab" data-tab="history" role="tab" aria-selected="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M4 10h16M9 3v4M15 3v4"/></svg>
+      <span>ประวัติ</span>
+    </button>
+    <button class="tab" data-action="tab" data-tab="stats" role="tab" aria-selected="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 20V11M12 20V5M19 20v-6"/></svg>
+      <span>สรุป</span>
+    </button>
+  </div>
+</nav>
+
+<div id="sheet" hidden>
+  <div class="backdrop" data-action="close"></div>
+  <div class="panel" role="dialog" aria-modal="true">
+    <div class="grab" aria-hidden="true"></div>
+    <div id="sheet-body"></div>
+  </div>
+</div>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>

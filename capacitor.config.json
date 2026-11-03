@@ -1,0 +1,18 @@
+{
+  "appId": "com.kawi.inspect",
+  "appName": "ตรวจเขต",
+  "webDir": "www",
+  "backgroundColor": "#e4f1ff",
+  "server": {
+    "androidScheme": "https"
+  },
+  "android": {
+    "allowMixedContent": false
+  },
+  "plugins": {
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_icon_config_sample",
+      "iconColor": "#1F6BFF"
+    }
+  }
+}
